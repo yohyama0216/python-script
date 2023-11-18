@@ -19,7 +19,9 @@ kohya
 #### 顔の入れ替え
 todo inswapper.py
 
-
+### 画質向上
+CodeFormer
+顔に特化したもの。
 
 ### sample.py
 動作確認用。
