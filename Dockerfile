@@ -15,13 +15,18 @@ ENV TERM xterm
 
 # 必要なパッケージのインストール
 RUN apt-get install -y vim less
+# Tkinterのインストール
+RUN apt-get install -y python3-tk
 RUN pip install --upgrade pip
 RUN pip install --upgrade setuptools
 
 # JupyterLab、TensorFlow、およびPillowのインストール
 RUN pip install jupyterlab
+RUN pip install pandas
+RUN pip install matplotlib
 RUN pip install scikit-learn
-RUN pip install tensorflow
+# RUN pip install tensorflow
 RUN pip install Pillow
+RUN pip install statsmodels
 
 # その他の必要な設定やコマンドがあればここに追加
